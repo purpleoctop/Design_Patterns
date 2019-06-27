@@ -1,12 +1,13 @@
-// import {Iperson} from './interfaces'
-// class Person implements Iperson{
-//     instance:{}
-//     constructor() {
-//         if (typeof Person.instance === 'object') {
-//             return Person.instance;
-//         }
-//         this.instance = this;
-//         return this;
-//     }
-// }
-// export default Person;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Person = /** @class */ (function () {
+    function Person() {
+        if (typeof Person.instance === 'object') {
+            return Person.instance;
+        }
+        Person.instance = this;
+        return this;
+    }
+    return Person;
+}());
+exports.default = Person;
