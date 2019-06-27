@@ -1,1 +1,0 @@
-export {Iperson} from './Iperson'

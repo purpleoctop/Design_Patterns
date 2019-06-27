@@ -1,13 +1,12 @@
-import {Iperson} from './interfaces'
+class Person{
+    
+    private static instance:Person;
 
-class Person implements Iperson{
-    Person :{}
-    instance:{}
     constructor() {
         if (typeof Person.instance === 'object') {
-            return this.instance;
+            return Person.instance;
         }
-        this.instance = this;
+        Person.instance = this;
         return this;
     }
 }
