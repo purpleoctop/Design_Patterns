@@ -1,8 +1,7 @@
-import { info } from './interfaces/info';
-import { factory, droid } from './interfaces/droid';
+import{pilotDroidFactory, battleDroidFactory } from './createDroid'
+import { Idroid } from './interfaces/Idroid';
 
-
-function droidProducer(kind) {
+function droidProducer(kind: string) : ()=>Idroid {
     if (kind === 'battle'){
         return battleDroidFactory;
     }
@@ -10,24 +9,7 @@ function droidProducer(kind) {
     return pilotDroidFactory;
 }
 
-function battleDroidFactory() : factory {
-    return new B1();
-}
 
-function pilotDroidFactory() :factory{
-    return new Rx24();
-}
 
-class B1 implements info {
-    info() {
-        return "B1, Battle Droid";
-    }
-}
-
-class Rx24 implements info{
-    info()  {
-        return "Rx24, Pilot Droid";
-    }
-}
 
 export default droidProducer;
