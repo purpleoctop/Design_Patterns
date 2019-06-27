@@ -1,5 +1,5 @@
-import { forclass } from './interfaces/forclass';
-import { forfactory } from './interfaces/forfactory';
+import { info } from './interfaces/info';
+import { factory, droid } from './interfaces/droid';
 
 
 function droidProducer(kind) {
@@ -10,21 +10,21 @@ function droidProducer(kind) {
     return pilotDroidFactory;
 }
 
-function battleDroidFactory() : forfactory {
+function battleDroidFactory() : factory {
     return new B1();
 }
 
-function pilotDroidFactory() :forfactory{
+function pilotDroidFactory() :factory{
     return new Rx24();
 }
 
-class B1 implements forclass {
+class B1 implements info {
     info() {
         return "B1, Battle Droid";
     }
 }
 
-class Rx24 implements forclass{
+class Rx24 implements info{
     info()  {
         return "Rx24, Pilot Droid";
     }

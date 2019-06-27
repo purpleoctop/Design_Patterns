@@ -1,2 +1,2 @@
-import {forclass} from './forclass'
-import {forfactory} from './forfactory'
+import {info} from './info'
+import {droid} from './droid'
