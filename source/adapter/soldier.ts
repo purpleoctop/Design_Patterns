@@ -1,11 +1,11 @@
-import {Isoldier} from './interface/Isoldier'
+import {Isoldier} from "./interface/Isoldier";
 export class Soldier implements Isoldier {
-    level : number
+    public level: number;
     constructor(level: number) {
         this.level = level;
     }
 
-    attack() {
+    public attack() {
         return this.level * 1;
     }
 }

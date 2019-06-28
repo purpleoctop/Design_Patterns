@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var droid_1 = require("./droid");
+var droidB1_1 = require("./droidB1");
+var droidRx24_1 = require("./droidRx24");
 function pilotDroidFactory() {
-    return new droid_1.Rx24();
+    return new droidRx24_1.Rx24();
 }
 exports.pilotDroidFactory = pilotDroidFactory;
 function battleDroidFactory() {
-    return new droid_1.B1();
+    return new droidB1_1.B1();
 }
 exports.battleDroidFactory = battleDroidFactory;

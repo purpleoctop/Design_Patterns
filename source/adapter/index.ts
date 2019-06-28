@@ -1,15 +1,15 @@
-import {Jedi} from './jedi'
-import {Soldier} from './soldier'
-import {Ijedi} from './interface'
-import {attackWithSaber} from './interface/Ijedi'
+import {Ijedi} from "./interface";
+import {attackWithSaber} from "./interface/Ijedi";
+import {Jedi} from "./jedi";
+import {Soldier} from "./soldier";
 
 class JediAdapter {
-    jedi : Ijedi
-    constructor(jedi :Ijedi) {
+    public jedi: Ijedi;
+    constructor(jedi: Ijedi) {
         this.jedi = jedi;
     }
 
-    attack() :attackWithSaber {
+    public attack(): attackWithSaber {
         return this.jedi.attackWithSaber() ;
     }
 }
@@ -17,5 +17,5 @@ class JediAdapter {
 export {
     Soldier,
     Jedi,
-    JediAdapter
+    JediAdapter,
 };

@@ -1,3 +1,3 @@
-export interface Idiscount{
-    calc(value:number) : number
+export interface Idiscount {
+    calc(value: number): number;
 }

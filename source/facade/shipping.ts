@@ -1,6 +1,6 @@
-import {Ishipping} from './interfaces'
+import {Ishipping} from "./interfaces";
 export class Shipping implements Ishipping {
-    calc() {
+   public calc() {
         return 5;
     }
 }

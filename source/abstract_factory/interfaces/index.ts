@@ -1,1 +1,1 @@
-import {Idroid} from './Idroid'
+import {Idroid} from "./Idroid";

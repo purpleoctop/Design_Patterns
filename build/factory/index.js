@@ -5,10 +5,10 @@ var BmwFactory = /** @class */ (function () {
     function BmwFactory() {
     }
     BmwFactory.create = function (type) {
-        if (type === 'X5') {
+        if (type === "X5") {
             return new BMW_1.Bmw(type, 108000, 300);
         }
-        if (type === 'X6') {
+        if (type === "X6") {
             return new BMW_1.Bmw(type, 111000, 320);
         }
     };

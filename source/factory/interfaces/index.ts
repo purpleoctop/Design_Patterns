@@ -1,1 +1,1 @@
-export { Ibmw, Models } from './Bmw';
+export { Ibmw, Models } from "./Bmw";

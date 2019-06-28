@@ -1,9 +1,8 @@
-class Person{
-    
-    private static instance:Person;
+class Person {
+    private static instance: Person;
 
     constructor() {
-        if (typeof Person.instance === 'object') {
+        if (typeof Person.instance === "object") {
             return Person.instance;
         }
         Person.instance = this;

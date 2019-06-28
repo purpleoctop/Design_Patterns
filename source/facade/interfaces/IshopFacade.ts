@@ -1,6 +1,6 @@
-export interface IshopFacade{
-    discount : {};
-    shipping : {};
-    fees :{}
-    calc(value ?: number):number
+export interface IshopFacade {
+    discount: {};
+    shipping: {};
+    fees: {};
+    calc(value ?: number): number;
 }

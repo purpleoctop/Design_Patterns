@@ -1,3 +1,3 @@
-export interface Ifees{
-    calc(value:number) :number;
+export interface Ifees {
+    calc(value: number): number;
 }

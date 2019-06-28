@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var shipping_1 = require("./shipping");
-var fees_1 = require("./fees");
 var discount_1 = require("./discount");
+var fees_1 = require("./fees");
+var shipping_1 = require("./shipping");
 var ShopFacade = /** @class */ (function () {
     function ShopFacade() {
         this.discount = new discount_1.Discount();

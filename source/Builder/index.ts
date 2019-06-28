@@ -1,27 +1,27 @@
-import {IrequestBuilder, Irequest} from './Interfaces'
-import {Request} from './request'
-export class RequestBuilder implements IrequestBuilder{
-    request : Irequest
+import {Irequest, IrequestBuilder} from "./Interfaces";
+import {Request} from "./request";
+export class RequestBuilder implements IrequestBuilder {
+    public request: Irequest;
     constructor() {
         this.request = new Request();
     }
 
-    forUrl(url:string) {
+    public forUrl(url: string) {
         this.request.url = url;
         return this;
     }
 
-    useMethod(method :string) {
+    public useMethod(method: string) {
         this.request.method = method;
         return this;
     }
 
-    payload(payload :{}) {
+    public payload(payload: {}) {
         this.request.payload = payload;
         return this;
     }
 
-    build() {
+    public build() {
         return this.request;
     }
 

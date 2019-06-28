@@ -1,4 +1,4 @@
-export interface Isheep{
-    name:string,
-    weight:number
+export interface Isheep {
+    name: string;
+    weight: number;
 }

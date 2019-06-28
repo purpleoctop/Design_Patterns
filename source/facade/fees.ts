@@ -1,7 +1,7 @@
-import {Ifees} from './interfaces'
+import {Ifees} from "./interfaces";
 export class Fees implements Ifees {
 
-    calc(value :number) {
+    public calc(value: number) {
         return value * 1.05;
     }
 }

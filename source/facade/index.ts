@@ -1,11 +1,12 @@
-import {Shipping} from './shipping'
-import {Fees} from './fees'
-import {Discount} from './discount'
-import {IshopFacade, Idiscount, Ishipping, Ifees} from './interfaces'
-class ShopFacade  implements IshopFacade{
-    discount : Idiscount;
-    shipping : Ishipping;
-    fees : Ifees
+import {Discount} from "./discount";
+import {Fees} from "./fees";
+import {Idiscount, Ifees, Ishipping, IshopFacade } from "./interfaces";
+import {Shipping} from "./shipping";
+
+class ShopFacade  implements IshopFacade {
+    public discount: Idiscount;
+    public shipping: Ishipping;
+    public fees: Ifees;
 
     constructor() {
         this.discount = new Discount();
@@ -13,16 +14,12 @@ class ShopFacade  implements IshopFacade{
         this.fees = new Fees();
     }
 
-    calc(price : number) :number {
+   public calc(price: number): number {
         price = this.discount.calc(price);
         price = this.fees.calc(price);
         price += this.shipping.calc();
         return price;
     }
 }
-
-
-
-
 
 export default ShopFacade;

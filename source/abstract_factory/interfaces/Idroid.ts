@@ -1,3 +1,3 @@
 export interface Idroid {
-    info : ()=> string
+    info: () => string;
 }

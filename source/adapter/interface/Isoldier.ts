@@ -1,4 +1,4 @@
 export interface Isoldier {
-    level:number;
- attack() :number;
+    level: number;
+ attack(): number;
 }

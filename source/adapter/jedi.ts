@@ -1,12 +1,12 @@
-import {Ijedi} from './interface'
+import {Ijedi} from "./interface";
 
 export class Jedi implements Ijedi {
-    level:number
-    constructor(level :number) {
+    public level: number;
+    constructor(level: number) {
         this.level = level;
     }
 
-    attackWithSaber() {
+    public attackWithSaber() {
         return this.level * 100;
     }
 }

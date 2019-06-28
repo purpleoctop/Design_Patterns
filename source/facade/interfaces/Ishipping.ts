@@ -1,3 +1,3 @@
-export interface Ishipping{
-    calc():number
+export interface Ishipping {
+    calc(): number;
 }

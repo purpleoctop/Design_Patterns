@@ -1,5 +1,5 @@
-export interface Irequest{
-    url:string;
-    method:string;
-    payload:object;
+export interface Irequest {
+    url: string;
+    method: string;
+    payload: object;
 }

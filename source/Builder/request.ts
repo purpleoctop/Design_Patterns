@@ -1,12 +1,11 @@
-import {Irequest} from './Interfaces'
+import {Irequest} from "./Interfaces";
 export class Request implements Irequest {
-    url:string;
-    method:string;
-    payload:object
+    public url: string;
+    public method: string;
+    public payload: object;
     constructor() {
-        this.url = '';
-        this.method = '';
+        this.url = "";
+        this.method = "";
         this.payload = {};
     }
 }
-
