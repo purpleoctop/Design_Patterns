@@ -1,0 +1,1 @@
+export {Ipasta} from "./Ipasta";
